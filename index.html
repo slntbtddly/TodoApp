@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo App</title>
+  <script src="todo.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Todo List</h1>
+    <div>
+      <form id="todo-form">
+      <input type="text" name="todo-input" id="todo-input" placeholder="Enter some text here" autocomplete="off">
+      <button id="todo-submit" type="submit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></button>
+      </form>
+    </div>
+    <div class="filters">
+      <fieldset>
+        <legend>Filters</legend>
+      <button class="filter" id="complete" data-filter="completed">Complete</button>
+      <button class="filter"  id="incomplete" data-filter="pending">pending</button>
+      <button class="filter active" id="all" data-filter="all"  >all</button>
+      </fieldset>
+    </div>
+    <div>
+      <ul id="todo-list">
+        
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>
