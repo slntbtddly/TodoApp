@@ -74,7 +74,6 @@ function createTodoitem(todo, todoIndex){
                checkbox.parentNode.classList.remove("checked");
                }
                saveTodoList();
-               updateTodoList();
             })
             
      return todoLI;

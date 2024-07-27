@@ -21,7 +21,7 @@ body{
 
 .wrapper {
     width: 450px;
-    max-width: 100%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -219,7 +219,6 @@ input[type="checkbox"]{
 }
 
 .filters fieldset {
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
   gap: 3px;
@@ -239,7 +238,20 @@ input[type="checkbox"]{
   cursor: pointer;
 }
 
-#complete {
+@media (max-width: 350px){
+  .filters fieldset {
+  display: block;
+  }
+
+  .filter{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+
+
+/* #complete {
   flex-grow: 1;
 }
 
@@ -250,7 +262,7 @@ input[type="checkbox"]{
 #all {
   flex-grow: 1;
 }
-
+ */
 .filter.active{
   background: var(--accent-color);
   border: 1px solid var(--secondary-color);
